@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Giphy Party</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <main>
-      <h1>Giphy Party</h1>  
-      <div>
-        <!-- Think about placing the form here -->
-
-      </div>
-      <div>
-        <!-- Think about displaying the results here -->
-        <!-- Or you can build out your own custom HTML structure -->
-
-        ... Your GIFs here ..
-      </div>
-     
-    </main>
-    <!-- Axios is already imported here for your convenience -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="index.js"></script>
-  </body>
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+          <title>Giphy Party</title>
+          <link rel="stylesheet" href="./style.css" />
+     </head>
+     <body>
+          <main>
+               <h1>Giphy Party</h1>
+               <div>
+                    <!-- Think about placing the form here -->
+                    <form>
+                         <input
+                              id="gif-input"
+                              type="text"
+                              placeholder="Search a GIF!"
+                         />
+                         <button id="gif-generator">Generate a GIF!</button>
+                         <button id="clear">Clear</button>
+                    </form>
+               </div>
+               <div id="gif-container">
+                    <!-- Think about displaying the results here -->
+                    <!-- Or you can build out your own custom HTML structure -->
+               </div>
+          </main>
+          <!-- Axios is already imported here for your convenience -->
+          <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+          <script src="index.js"></script>
+     </body>
 </html>
